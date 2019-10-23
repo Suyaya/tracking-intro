@@ -1,0 +1,93 @@
+/* body */
+
+body{position: relative;margin:0;}
+
+/* header */
+header {height:100px; display:flex;justify-content:center;align-items:start;}
+    /* header logo */
+    header > a{width:40%;text-align: left; margin-top:2rem;}
+
+    /* header nav */
+    header nav {text-align:right;width:40%; margin-top:2rem;}
+
+    header nav button {font-size:1.6rem; border:none;padding:0;}
+
+    header nav button:focus {outline:none;}
+
+    header nav ul {position: absolute; left:-9000px; top: 70px; list-style-type: none; box-shadow: 1px 1px 3px gray;background-color:white;height:180px;width:80%;padding-left:0;}
+    
+    header nav ul li {text-align:center;line-height:2.2;}
+
+    header nav ul li a {text-decoration: none; color:black;font-weight:700; font-size:1rem; font-family: 'Barlow Condensed', sans-serif;letter-spacing:1px;text-shadow: 1px 1px 8px rgba(128, 128, 128, 0.335);}
+    
+    header nav ul li:last-child{padding-top:10px;  border-top: 2px solid rgb(207, 204, 204); width: 70%; margin:10px auto;}
+    header nav ul li:last-child a {color:gray;}
+
+    /* header gray bg color */
+    header div {background-color:rgba(128, 128, 128, 0.192); position:absolute; width:50%;height:350px;top:0; right:0;z-index: -1;border-radius:0 0 0 70px;}
+
+/* main */
+main{padding-top:280px;background-image:url(images/illustration-devices.svg);background-repeat: no-repeat; background-position: top right; background-size: 90%;}
+
+    /* main p */
+    main p.ad{font-family:'Barlow Condensed', sans-serif; padding-left:10%;}
+
+    main p.ad span.new {font-weight:700;color:white;background:black;padding:3px 7px; border-radius:15px;letter-spacing: 3px; }
+    
+    main p.ad span.mon {margin-left:10px;letter-spacing: 3px; color:gray;}
+
+    /* main h1 */
+    main h1{padding-left:10%;font-weight:700;font-family:'Barlow Condensed', sans-serif;letter-spacing: 1px;color:rgba(0, 0, 0, 0.822);margin-bottom:0;}
+
+    /* main p.project */
+    main p.project{padding-left:10%;font-family:'Barlow Condensed', sans-serif;color:rgba(0, 0, 0, 0.698); margin-top:0.5rem;font-size:1.1rem; width:70%; margin-bottom:1.5rem;}
+
+    /* main a */
+
+    main a{padding-left:10%;}
+
+    main a button{background-color:hsl(0, 100%, 68%); color:white;font-family:'Barlow Condensed', sans-serif; font-weight:700;padding:0.5rem 1.5rem;border:none; border-radius: 3px;}
+
+    main span.preview{font-family:'Barlow Condensed', sans-serif;letter-spacing:2px; font-size: 0.7rem;color:gray; margin-left:1rem;}
+
+/* footer */
+
+footer p{margin-top:2rem; color:rgba(128, 128, 128, 0.568);font-family:'Barlow Condensed', sans-serif; font-size:.8rem; padding: 1rem 0; text-align:center; border-top: 2px solid rgb(207, 204, 204);padding-top:2rem;}
+footer a{text-decoration: none;color:rgba(77, 57, 57, 0.568);}
+
+@media screen and (min-width: 400px){
+    main {padding-top:350px;}
+    header div {height:400px;}
+}
+@media screen and (min-width: 500px){
+    header div {height:450px;}
+}
+@media screen and (min-width: 550px){
+    main {padding-top:450px;}
+    header div {height:500px;}
+}
+@media screen and (min-width: 650px){
+    main {padding-top:500px;}
+    header div {height:550px;}
+}
+@media screen and (min-width: 750px){
+    main {padding-top:600px;}
+    header div {height:700px;}
+}
+@media screen and (min-width: 1000px){
+    main{padding-right:60%; padding-top:0; background-size:45%; background-position:top 100px right 0;height:500px;}
+    header div {height:400px;}
+    main p.ad {padding-top: 100px;}
+    html{font-size:20px;}
+    header nav button{position: absolute; left:-9000px;}
+    ul#nav {display:flex; left:55%; top:20px;justify-content:center;box-shadow:none;background-color:transparent; width:40%; justify-content: space-around;}
+    ul#nav li:last-child {border-top:none; width:20px; padding-top:0; margin: 0; padding-left:2rem;}
+    ul#nav a.dot::after {content:'·'; font-size:1rem; position:relative; left:60%; color:gray;}
+    
+   
+}
+@media screen and (min-width: 1155px){
+    main{ height:75vh;}
+    html{font-size:22px;}
+}
+
